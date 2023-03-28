@@ -1,0 +1,32 @@
+<section class="new-group-modal-section">
+  <form class="form">
+    <p class="lable">Group name:</p>
+    <div class="field">
+      <input class="input" type="text" pInputText [formControl]="groupName" />
+      <p-message
+        class="message"
+        severity="error"
+        text="Field is required"
+        [ngStyle]="{'visibility': !groupName.valid && groupName.touched ? 'visible' : 'hidden'}"
+      ></p-message>
+    </div>
+  </form>
+
+  <div class="actions">
+    <button
+      pButton
+      type="button"
+      label="Save"
+      class="p-button-secondary"
+      (click)="saveChanges()"
+    ></button>
+
+    <button
+      pButton
+      type="button"
+      label="Cancel"
+      class="p-button-danger"
+      (click)="ref.close()"
+    ></button>
+  </div>
+</section>

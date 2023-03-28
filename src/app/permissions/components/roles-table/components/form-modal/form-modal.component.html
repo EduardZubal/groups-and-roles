@@ -1,0 +1,38 @@
+<form class="form" [formGroup]="form">
+  <span class="p-float-label">
+    <input id="float-input" type="text" pInputText formControlName="name">
+    <label for="float-input">Name</label>
+  </span>
+
+  <p-dropdown
+    optionLabel="value"
+    optionValue="value"
+    appendTo="body"
+    [options]="(roles$ | async) || []"
+    formControlName="roleName"
+  ></p-dropdown>
+
+  <div class="field-active">
+    <p class="field-active__text">Active</p>
+    <p-inputSwitch formControlName="active"></p-inputSwitch>
+  </div>
+
+  <div class="actions">
+    <button
+      pButton
+      type="button"
+      label="Save"
+      class="p-button-secondary"
+      [disabled]="form.invalid"
+      (click)="saveChanges()"
+    ></button>
+
+    <button
+      pButton
+      type="button"
+      label="Cancel"
+      class="p-button-danger"
+      (click)="ref.close()"
+    ></button>
+  </div>
+</form>

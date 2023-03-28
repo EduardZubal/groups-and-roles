@@ -1,0 +1,29 @@
+:host {
+  display: block;
+  width: 100%;
+  max-width: 275px;
+  height: calc(100% - 40px);
+
+  .sidebar {
+    width: 250px;
+    height: 100%;
+    border-radius: 15px;
+    background-color: var(--surface-a);
+    box-shadow: 0 2px 8px var(--color-default-gray);
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .new-group-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+
+    button:first-child {
+      margin-right: 10px;
+    }
+  }
+  }

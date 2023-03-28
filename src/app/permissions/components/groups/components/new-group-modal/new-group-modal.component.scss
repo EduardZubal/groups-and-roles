@@ -1,0 +1,50 @@
+:host {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+
+  .new-group-modal-section {
+    width: 100%;
+    padding-bottom: 130px;
+  }
+
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .lable {
+      padding-right: 20px;
+      white-space: nowrap;
+    }
+
+    .field {
+      position: relative;
+    }
+
+    .message {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      margin-top: 3px;
+    }
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 20px;
+
+    button:first-child {
+      margin-right: 10px;
+    }
+  }
+}

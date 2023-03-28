@@ -1,0 +1,30 @@
+
+@import "assets/scss/reset";
+@import "assets/scss/common-variables";
+@import "assets/scss/prime-components/panel-menu.scss";
+@import "assets/scss/prime-components/p-dropdown.scss";
+@import "assets/scss/prime-components/p-button.scss";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 1024px;
+}
+
+body {
+  font-family: 'Helvetica', sans-serif;
+}
+
+p {
+  color: var(--text-color);
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+

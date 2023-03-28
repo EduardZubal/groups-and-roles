@@ -1,0 +1,49 @@
+:host {
+  display: block;
+  width: 100%;
+  margin-bottom: 80px;
+
+  .form {
+    padding-top: 20px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  p-dropdown {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .field-active,
+  .fields {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .field-active {
+    margin-top: 20px;
+    &__text {
+      padding-right: 10px;
+    }
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 20px;
+
+    button:first-child {
+      margin-right: 10px;
+    }
+  }
+}

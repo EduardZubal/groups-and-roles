@@ -1,0 +1,17 @@
+<aside class="sidebar">
+  <div class="new-group-actions">
+    <h3>Groups</h3>
+    <button
+      pButton
+      type="button"
+      icon="pi pi-cog"
+      class="p-button-secondary"
+      (click)="openSettings()"
+    ></button>
+  </div>
+
+  <p-panelMenu
+    [model]="menuItems"
+    [multiple]="false"
+  ></p-panelMenu>
+</aside>

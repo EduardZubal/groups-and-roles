@@ -1,0 +1,21 @@
+:host {
+  width: 100%;
+  display: block;
+
+  .header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  h1 {
+    padding-right: 20px;
+  }
+
+  .key {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--color-default-green-button);
+  }
+}

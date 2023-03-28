@@ -1,0 +1,26 @@
+
+.p-panelmenu .p-panelmenu-header>a {
+  padding: 1rem;
+  background: var(--color-default-white);
+  border: none;
+}
+
+.p-panelmenu .p-panelmenu-header.p-highlight>a {
+  border-radius: 6px;
+}
+
+.p-panelmenu .p-panelmenu-header.p-highlight:not(.p-disabled)>a:hover,
+.p-panelmenu .p-panelmenu-header>a:focus,
+.p-panelmenu .p-panelmenu-header:not(.p-highlight):not(.p-disabled)>a:hover {
+  color: var(--color-default-black);
+  background: var(--color-secondary-gray);
+  border: none;
+  box-shadow: 0 0 0 0;
+}
+
+.p-panelmenu .p-panelmenu-header .p-panelmenu-header-link.p-menuitem-link-active {
+  background: var(--color-secondary-gray);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  color: var(--color-default-black);
+}
