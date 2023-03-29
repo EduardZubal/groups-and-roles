@@ -1,0 +1,23 @@
+p-table {
+    height: 100%;
+    width: 100%;
+
+    .p-datatable-wrapper {
+        height: 100%;
+        overflow: auto !important;
+    }
+    .p-datatable {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    p-paginator {
+        p-dropdown, .p-dropdown-label {
+            max-width: 75px;
+            .p-dropdown-label {
+                min-width: fit-content;
+            }
+        }
+    }
+
+}

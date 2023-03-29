@@ -26,9 +26,11 @@
       #TableRef
       [value]="tableData"
       responsiveLayout="scroll"
-      [rows]="10"
-      dataKey="id"
+      [rows]="5"
+      [rowsPerPageOptions]="[5,15,25]"
+      [showCurrentPageReport]="true"
       [paginator]="true"
+      dataKey="id"
       [globalFilterFields]="['name','roleName']"
       [(selection)]="selectedRoles"
     >

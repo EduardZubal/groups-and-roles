@@ -12,6 +12,10 @@
     margin-bottom: 20px;
   }
 
+  .roles-table-section {
+    height: calc(100% - 120px);
+  }
+
   .actions {
     display: flex;
     flex-direction: row;
