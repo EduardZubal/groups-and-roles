@@ -1,5 +1,13 @@
 <header class="header">
-  <h1 class="h1">Permissions</h1>
-  <i class="pi pi-key key"></i>
+  <div class="title-wrap">
+    <h1 class="h1">Permissions</h1>
+    <i class="pi pi-key key"></i>
+  </div>
+
+  <div class="switch-theme-wrap" (click)="onChangeTheme()">
+    <p-inputSwitch [ngModel]="theme"></p-inputSwitch>
+    <i class="pi pi-sun sun" [ngStyle]="{'display':!theme ? 'block' : 'none' }"></i>
+    <i class="pi pi-moon moon" [ngStyle]="{'display':theme ? 'block' : 'none' }"></i>
+  </div>
 </header>
 
